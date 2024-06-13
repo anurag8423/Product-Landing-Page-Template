@@ -1,4 +1,10 @@
 import React from 'react';
+import Avatar1 from '../assets/images/avatar-01.jpg';
+import Avatar2 from '../assets/images/avatar-02.jpg';
+import Avatar3 from '../assets/images/avatar-03.jpg';
+import Avatar4 from '../assets/images/avatar-04.jpg';
+import Avatar5 from '../assets/images/avatar-05.jpg';
+
 import CtaIllustration from "../assets/images/cta-illustration.svg";
 
 const Cta = () => {
@@ -58,19 +64,19 @@ const Cta = () => {
                         {/* <!-- Avatars --> */}
                         <ul className="justify-center mb-4 flex pl-3">
                             <li>
-                                <img className="rounded-full" src="../../src/assets/images/avatar-01.jpg" width="32" height="32" alt="Avatar 01" />
+                                <img className="rounded-full" src={Avatar1} width="32" height="32" alt="Avatar 01" />
                             </li>
                             <li className="-translate-x-1">
-                                <img className="rounded-full" src="../../src/assets/images/avatar-02.jpg" width="32" height="32" alt="Avatar 02" />
+                                <img className="rounded-full" src={Avatar2} width="32" height="32" alt="Avatar 02" />
                             </li>
                             <li className="-translate-x-2">
-                                <img className="rounded-full" src="../../src/assets/images/avatar-03.jpg" width="32" height="32" alt="Avatar 03" />
+                                <img className="rounded-full" src={Avatar3} width="32" height="32" alt="Avatar 03" />
                             </li>
                             <li className="-translate-x-3">
-                                <img className="rounded-full" src="../../src/assets/images/avatar-04.jpg" width="32" height="32" alt="Avatar 04" />
+                                <img className="rounded-full" src={Avatar4} width="32" height="32" alt="Avatar 04" />
                             </li>
                             <li className="-translate-x-4">
-                                <img className="rounded-full" src="../../src/assets/images/avatar-05.jpg" width="32" height="32" alt="Avatar 05" />
+                                <img className="rounded-full" src={Avatar5} width="32" height="32" alt="Avatar 05" />
                             </li>
                         </ul>
                         <p className="text-sm leading-[1.5715] tracking-tight text-gray-500">Join the <span className="font-medium text-white">2,000+</span> members who have already signed up.</p>
