@@ -22,8 +22,8 @@ const ContactCard = ({ heading, message, content, svgPath }) => {
 const Contact = () => {
     return (
         <main className='bg-gradient-2 dark:bg-gradient-1 border-t border-indigo-300 dark:border-slate-800' id="contact-us">
-            <div className="relative grow max-w-6xl mx-auto px-6 pb-20">
-                <section className="mx-auto max-w-screen-md pb-16 pt-20 text-center">
+            <div className="relative grow max-w-6xl mx-auto px-6 py-12 md:py-20 ">
+                <section className="mx-auto max-w-screen-md pb-16 text-center">
                     <h1 className="text-5xl leading-[1.2] tracking-[-0.017em] font-bold md:text-6xl md:leading-none md:tracking-[-0.017em] mb-4 font-hk text-gray-800 dark:text-gray-300">Get in touch</h1>
                     <p className="text-xl leading-normal tracking-[-0.017em] text-gray-500">
                         Fill out the form below to set up a call, or keep reading to get in touch with us
@@ -33,7 +33,7 @@ const Contact = () => {
 
 
                 {/* <!-- Illustration --> */}
-                <div className="pointer-events-none absolute -left-[6%] top-1/3  mt-[-2rem] block" aria-hidden="true">
+                <div className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-1/3  mt-[-2rem] block" aria-hidden="true">
                     <img src={CtaIllustration} className="max-w-none" width="1440" height="440"
                         alt="Features 01 Illustration" /></div>
 

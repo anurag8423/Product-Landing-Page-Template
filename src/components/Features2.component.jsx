@@ -25,16 +25,16 @@ const Features2 = () => {
 
     return (
         <section className="max-w-full bg-gradient-2 dark:bg-gradient-1 border-t border-indigo-300 dark:border-slate-800">
-            <div className="relative max-w-6xl px-6 mx-auto">
+            <div className="relative max-w-6xl px-6 mx-auto py-12 md:py-20">
                 {/* Bg gradient: top */}
                 <div className="pointer-events-none absolute top-0 left-0 right-0 -z-10 h-[25rem] opacity-25" aria-hidden="true"></div>
 
                 {/* Illustration */}
-                <div className="pointer-events-none absolute left-[-6%] top-0 -z-0 mt-40 block" aria-hidden="true">
+                <div className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-0 -z-0 mt-40 block" aria-hidden="true">
                     <img src={FeaturesIllustration02} className="max-w-none" width="1440" height="453" alt="Features 02 Illustration" />
                 </div>
 
-                <div className="m-auto w-full py-20">
+                <div className="m-auto w-full">
                     <div className="mx-auto max-w-screen-md pb-12 text-center">
                         <h2 className="text-5xl leading-[1.2] tracking-[-0.017em] font-bold md:text-6xl md:leading-none md:tracking-[-0.017em] font-hk text-gray-800 dark:text-gray-300">Features to help you create your best designs</h2>
                     </div>

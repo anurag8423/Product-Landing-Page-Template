@@ -4,10 +4,10 @@ import HeroImg from '../assets/images/hero-image.png';
 
 const Hero = () => {
     return (
-        <section className="relative">
+        <section className="relative pb-12 md:pb-20">
 
             {/* <!-- Illustration --> */}
-            <div className="pointer-events-none absolute left-[-6%] block z-auto" aria-hidden="true">
+            <div className="pointer-events-none absolute left-1/2 -translate-x-1/2 block z-auto" aria-hidden="true">
                 <img src={HeroIllustration} className="max-w-none" width="1440" height="1265"
                     alt="Hero Illustration" />
             </div>

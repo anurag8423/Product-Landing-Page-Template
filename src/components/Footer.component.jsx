@@ -92,6 +92,8 @@ const Footer = () => {
                     <a className="text-gray-500 transition ease-in-out duration-150 hover:text-gray-800 dark:text-gray-300" href="#0">Terms</a> · <a className="text-gray-500 transition ease-in-out duration-150 hover:text-gray-800 dark:text-gray-300" href="#0">Privacy Policy</a>
                 </div>
 
+                <p className="text-sm whitespace-nowrap text-slate-200 dark:text-slate-800 dark:text-opacity-15">Made by <a href="https://mondalsurojit.github.io/Surojit/">Surojit Mondal</a></p>
+
                 {/* Social links */}
                 <ul className="flex space-x-2">
                     <li>

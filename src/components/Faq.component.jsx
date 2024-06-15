@@ -43,15 +43,15 @@ const FaqCard = ({ question, answer }) => {
 
 const Faq = () => {
     return (
-        <main className="relative grow pb-12 sm:pb-20 px-4 sm:px-6 max-w-6xl mx-auto" id="faq">
+        <main className="relative grow px-4 sm:px-6 py-12 md:py-20 max-w-6xl mx-auto" id="faq">
 
             {/* <!-- Bg illustration --> */}
-            <div className="pointer-events-none absolute -left-1/2 top-[5%] -z-0 mt-[-5rem] cj3ve" aria-hidden="true">
+            <div className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-[5%] -z-0 mt-[-5rem] cj3ve" aria-hidden="true">
                 <img src={FeatureIllustration} className="max-w-none" width="1440" height="440"
                     alt="Illustration" />
             </div>
 
-            <section className="mx-auto max-w-screen-md pb-16 pt-20 text-center">
+            <section className="mx-auto max-w-screen-md pb-16 text-center">
                 <h1 className="text-5xl leading-[1.2] tracking-[-0.017em] font-bold md:text-6xl md:leading-none md:tracking-[-0.017em] mb-4 font-hk text-gray-800 dark:text-gray-300">Quick Answers</h1>
                 <p className="text-xl leading-normal tracking-[-0.017em] text-gray-500">
                     Here we provide answers for the most common questions. From registering and accessing your account to payments and paid subscriptions.

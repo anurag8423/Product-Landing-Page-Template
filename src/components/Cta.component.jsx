@@ -12,15 +12,15 @@ const Cta = () => {
         <section className="relative bg-gradient-2 dark:bg-gradient-1 border-t border-indigo-300 dark:border-slate-800">
 
             {/* <!-- Bg gradient: top --> */}
-            <div className="pointer-events-none absolute top-0 left-0 right-0 -z-10 h-[25rem] bg-gradient-2 dark:gradient-1 c6xlp transparent opacity-25" aria-hidden="true"></div>
+            <div className="pointer-events-none absolute top-0 left-0 right-0 -z-10 h-[25rem] bg-gradient-2 dark:gradient-1 transparent opacity-25" aria-hidden="true"></div>
 
             {/* <!-- Illustration --> */}
-            <div className="pointer-events-none absolute -left-[6%] top-0  mt-[-2rem] block" aria-hidden="true">
+            <div className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-0  mt-[-2rem] block" aria-hidden="true">
                 <img src={CtaIllustration} className="max-w-none" width="1440" height="440"
                     alt="Features 01 Illustration" /></div>
 
-            <div className="mx-auto max-w-6xl px-6">
-                <div className="py-20">
+            <div className="mx-auto max-w-6xl px-6 py-12 md:py-20 ">
+                {/* <div className="py-20"> */}
 
                     {/* <!-- Section header --> */}
                     <div className="mx-auto max-w-screen-md pb-12 text-center" data-aos="fade-up">
@@ -83,7 +83,7 @@ const Cta = () => {
 
                     </div>
 
-                </div>
+                {/* </div> */}
             </div>
         </section>
     )

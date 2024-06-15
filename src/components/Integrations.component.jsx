@@ -13,7 +13,7 @@ const IntegrationIcons = ({ imgSrc, w = "w-full", translate = "" }) => {
         <div className="relative flex aspect-[1/1] items-center justify-center bg-white bg-opacity-50 dark:bg-slate-800 p-2  shadow-sm" data-aos="fade-up"
             data-aos-delay="200">
             {/* <!-- Inner lines --> */}
-            <div className="absolute inset-0 left-[-6%] top-[-2.5rem] h-6 w-[calc(100%_+_24px)] hidden md:block" aria-hidden="true">
+            <div className="absolute inset-0 left-1/2 -translate-x-1/2 top-[-2.5rem] h-6 w-[calc(100%_+_24px)] hidden md:block" aria-hidden="true">
                 <div className="absolute left-2/4 h-full w-0.5 bg-indigo-300 dark:bg-slate-800"></div>
                 <div className={`absolute h-0.5 ${w} bg-indigo-300 dark:bg-slate-800 ${translate}`}></div>
             </div>
@@ -34,7 +34,7 @@ const Integrations = () => {
             {/* <!-- Bottom vertical line --> */}
             <div className="absolute left-2/4 bottom-0 h-8 w-0.5 bg-indigo-300 dark:bg-slate-800 hidden md:block" aria-hidden="true"></div>
 
-            <div className="mx-auto max-w-6xl px-4 py-12 border-t border-indigo-300 dark:border-slate-800">
+            <div className="mx-auto max-w-6xl px-4 py-12 md:py-20 border-t border-indigo-300 dark:border-slate-800">
                 {/* <!-- Section header --> */}
                 <div className="mx-auto max-w-screen-md pb-12 text-center">
                     <h2 className="text-5xl leading-[1.2] tracking-[-0.017em] font-bold md:text-6xl md:leading-none md:tracking-[-0.017em] font-hk text-gray-800 dark:text-gray-300">An ecosystem of <br /> integrations</h2>

@@ -45,7 +45,7 @@ const Features = () => {
                 <img src={FeatureIllustration} className="max-w-none" width="1440" height="440" alt="Illustration" />
             </div>
 
-            <div className="mx-auto max-w-6xl px-4 py-12">
+            <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
                 {/* <!-- Section header --> */}
                 <div className="mx-auto max-w-screen-md pb-12 text-center">
                     <h2 className="text-5xl leading-[1.2] tracking-[-0.017em] font-bold md:text-6xl md:leading-none md:tracking-[-0.017em] mb-4 font-hk text-gray-800 dark:text-gray-300">Many tools to express your creativity</h2>

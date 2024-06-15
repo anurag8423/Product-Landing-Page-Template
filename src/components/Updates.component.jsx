@@ -32,7 +32,7 @@ const UpdateItems = ({ renderBefore, date, heading, content, dp, author }) => {
 
 const Updates = () => {
     return (
-        <main className="relative mx-auto max-w-6xl px-4 sm:px-6 pb-20 border-b border-indigo-300 dark:border-slate-800" id="updates">
+        <main className="relative mx-auto max-w-6xl px-4 sm:px-6 pt-12 pb-16 md:py-20 border-b border-indigo-300 dark:border-slate-800" id="updates">
 
             {/* <!-- Bg illustration --> */}
             <div className="pointer-events-none absolute left-0 top-1/2 -z-0 mt-[-5rem]" aria-hidden="true">
@@ -40,7 +40,7 @@ const Updates = () => {
                     alt="Illustration" />
             </div>
 
-            <section className="mx-auto max-w-screen-md pb-12 pt-20 text-center">
+            <section className="mx-auto max-w-screen-md pb-12 text-center">
                 <h1 className="text-5xl leading-[1.2] tracking-[-0.017em] font-bold md:text-6xl md:leading-none md:tracking-[-0.017em] mb-4 font-hk text-gray-800 dark:text-gray-300">News &amp; Updates</h1>
                 <p className="text-xl leading-normal tracking-[-0.017em] text-gray-500">
                     Rank and score updates and feature requests so you know you're working on the most impactful things.
