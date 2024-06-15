@@ -2,6 +2,7 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     screens: {
       'sm': '640px',   // => @media (min-width: 640px) { ... }
@@ -20,7 +21,9 @@ module.exports = {
       backgroundImage: {
         'checkbox-checked': "url('../src/assets/images/checkbox-checked.svg')",
         "gradient-1": "linear-gradient(to bottom, rgb(18,27,46), transparent)",
-        "gradient-2": "linear-gradient(to bottom, rgb(18,27,46), transparent)"
+        "gradient-2": "linear-gradient(to bottom, rgb(224,231,255), transparent)",
+        "gradient-3": "linear-gradient(to bottom, rgb(199,210,254), transparent)",
+        "gradient-4": "linear-gradient(to bottom, rgb(199,210,254,.6), rgb(224,231,255,.6))",
       },
       keyframes: {
         ping: {

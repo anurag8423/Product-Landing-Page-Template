@@ -5,7 +5,7 @@ const FaqCard = ({ question, answer }) => {
     const [expanded, setExpanded] = useState(false);
 
     return (
-        <div className="bg-slate-800 bg-opacity-60 backdrop-blur-sm rounded-lg py-1">
+        <div className="bg-white bg-opacity-50 dark:bg-slate-800 dark:bg-opacity-60 backdrop-blur-sm rounded-lg py-1">
             <h2>
                 <button
                     id="faqs-title-01"
@@ -13,8 +13,8 @@ const FaqCard = ({ question, answer }) => {
                     onClick={() => setExpanded(!expanded)}
                     aria-expanded={expanded}
                     aria-controls="faqs-text-01">
-                    <span>{question}</span>
-                    <span className={`justify-center items-center rounded-full shrink-0 ml-2 flex h-5 w-5 bg-gray-600 transform transition-transform duration-300 ${expanded ? 'rotate-180' : ''}`}>
+                    <span className="text-black dark:text-white">{question}</span>
+                    <span className={`justify-center items-center rounded-full shrink-0 ml-2 flex h-5 w-5 bg-white dark:bg-gray-600 transform transition-all duration-300 ${expanded ? 'rotate-180' : ''}`}>
                         <svg className="fill-gray-400" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 opacity=".72"
@@ -29,8 +29,7 @@ const FaqCard = ({ question, answer }) => {
                 id="faqs-text-01"
                 role="region"
                 aria-labelledby="faqs-title-01"
-                className={`overflow-hidden transition-all duration duration-300 ease-in-out text-sm leading-[1.5715] grid ${expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
-            >
+                className={`overflow-hidden transition-all duration duration-300 ease-in-out text-sm leading-[1.5715] grid ${expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
                 <div className="overflow-hidden">
                     <p className="px-4 pb-2 text-gray-500">
                         {answer}
@@ -44,7 +43,7 @@ const FaqCard = ({ question, answer }) => {
 
 const Faq = () => {
     return (
-        <main className="relative grow pb-12 sm:pb-20 px-4 sm:px-6 max-w-6xl mx-auto">
+        <main className="relative grow pb-12 sm:pb-20 px-4 sm:px-6 max-w-6xl mx-auto" id="faq">
 
             {/* <!-- Bg illustration --> */}
             <div className="pointer-events-none absolute -left-1/2 top-[5%] -z-0 mt-[-5rem] cj3ve" aria-hidden="true">
@@ -52,8 +51,8 @@ const Faq = () => {
                     alt="Illustration" />
             </div>
 
-            <section className="mx-auto max-w-screen-md pb-12 pt-20 text-center">
-                <h1 className="text-5xl leading-[1.2] tracking-[-0.017em] font-bold md:text-6xl md:leading-none md:tracking-[-0.017em] mb-4 font-hk text-gray-300">Quick Answers</h1>
+            <section className="mx-auto max-w-screen-md pb-16 pt-20 text-center">
+                <h1 className="text-5xl leading-[1.2] tracking-[-0.017em] font-bold md:text-6xl md:leading-none md:tracking-[-0.017em] mb-4 font-hk text-gray-800 dark:text-gray-300">Quick Answers</h1>
                 <p className="text-xl leading-normal tracking-[-0.017em] text-gray-500">
                     Here we provide answers for the most common questions. From registering and accessing your account to payments and paid subscriptions.
                 </p>

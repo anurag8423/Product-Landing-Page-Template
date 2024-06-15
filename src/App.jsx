@@ -15,7 +15,7 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className="bg-slate-900 text-gray-300 tracking-[-0.01em] flex min-h-screen flex-col overflow-x-hidden font-hk">
+    <div className="bg-indigo-100 dark:bg-slate-900 light:bg-indigo-100 text-gray-900 dark:text-gray-300 tracking-[-0.01em] flex min-h-screen flex-col overflow-x-hidden font-hk">
       <Navbar />
       <Hero />
       {/* <Testimonials /> */}

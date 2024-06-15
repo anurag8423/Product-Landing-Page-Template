@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ModeContext } from '../../src/Mode.context.jsx';
+
 import Icon01 from '../assets/images/integration-icon-01.svg';
 import Icon02 from '../assets/images/integration-icon-02.svg';
 import Icon03 from '../assets/images/integration-icon-03.svg';
@@ -8,15 +10,15 @@ import Icon06 from '../assets/images/integration-icon-06.svg';
 
 const IntegrationIcons = ({ imgSrc, w = "w-full", translate = "" }) => {
     return (
-        <div className="relative flex aspect-[1/1] items-center justify-center bg-slate-800 p-2" data-aos="fade-up"
+        <div className="relative flex aspect-[1/1] items-center justify-center bg-white bg-opacity-50 dark:bg-slate-800 p-2" data-aos="fade-up"
             data-aos-delay="200">
             {/* <!-- Inner lines --> */}
             <div className="absolute inset-0 left-[-6%] top-[-2.5rem] h-6 w-[calc(100%_+_24px)] hidden md:block" aria-hidden="true">
-                <div className="absolute left-2/4 h-full w-0.5 bg-slate-800"></div>
-                <div className={`absolute h-0.5 ${w} bg-slate-800 ${translate}`}></div>
+                <div className="absolute left-2/4 h-full w-0.5 bg-indigo-300 dark:bg-slate-800"></div>
+                <div className={`absolute h-0.5 ${w} bg-indigo-300 dark:bg-slate-800 ${translate}`}></div>
             </div>
             {/* <!-- Circle --> */}
-            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-1 c6xlp c01wk">
+            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-3 dark:bg-gradient-1">
                 {/* <!-- Icon --> */}
                 <img src={imgSrc} width="53" height="45" alt="Icon 03" />
             </div>
@@ -25,16 +27,17 @@ const IntegrationIcons = ({ imgSrc, w = "w-full", translate = "" }) => {
 }
 
 const Integrations = () => {
+    const { darkMode } = useContext(ModeContext);
     return (
         <section className="relative">
 
             {/* <!-- Bottom vertical line --> */}
-            <div className="absolute left-2/4 bottom-0 h-8 w-0.5 bg-slate-800 hidden md:block" aria-hidden="true"></div>
+            <div className="absolute left-2/4 bottom-0 h-8 w-0.5 bg-indigo-300 dark:bg-slate-800 hidden md:block" aria-hidden="true"></div>
 
-            <div className="mx-auto max-w-6xl px-4 py-12 border-y border-slate-800">
+            <div className="mx-auto max-w-6xl px-4 py-12 border-t border-indigo-300 dark:border-slate-800">
                 {/* <!-- Section header --> */}
                 <div className="mx-auto max-w-screen-md pb-12 text-center">
-                    <h2 className="text-5xl leading-[1.2] tracking-[-0.017em] font-bold md:text-6xl md:leading-none md:tracking-[-0.017em] font-hk text-gray-300">An ecosystem of <br /> integrations</h2>
+                    <h2 className="text-5xl leading-[1.2] tracking-[-0.017em] font-bold md:text-6xl md:leading-none md:tracking-[-0.017em] font-hk text-gray-800 dark:text-gray-300">An ecosystem of <br /> integrations</h2>
                 </div>
 
                 {/* <!-- Logo animation --> */}
@@ -126,10 +129,11 @@ const Integrations = () => {
                             height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
                             <defs>
                                 <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="lg-1">
-                                    <stop stop-color="#0F172A" stop-opacity="0%" offset="0%"></stop>
-                                    <stop stop-color="#0F172A" offset="100%"></stop>
+                                    <stop stop-color={darkMode ? "#0F172A" : "#E0E7FF"} stop-opacity="0%" offset="0%"></stop>
+                                    <stop stop-color={darkMode ? "#0F172A" : "#E0E7FF"} offset="100%"></stop>
                                 </linearGradient>
                             </defs>
+                            {/* #E0E7FF */}
                             <g className="fill-indigo-600 opacity-75" fill-rule="evenodd">
                                 <circle className="opacity-0 origin-center animate-ping-0 scale-105" cx="400" cy="400" r="200"></circle>
                                 <circle className="opacity-0 origin-center animate-ping-1 scale-100" cx="400" cy="400" r="200"></circle>
@@ -163,7 +167,7 @@ const Integrations = () => {
                 {/* <!-- Integration boxes --> */}
                 <div className="relative grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 mt-10 md:mt-20 mx-auto max-w-80 sm:max-w-md md:max-w-full gap-6">
                     {/* <!-- Top vertical line --> */}
-                    <div className="absolute left-2/4 top-[-4rem] mt-[-0.5rem] h-8 w-0.5 bg-slate-800 hidden md:block" aria-hidden="true">
+                    <div className="absolute left-2/4 top-[-4rem] mt-[-0.5rem] h-8 w-0.5 bg-indigo-300 dark:bg-slate-800 hidden md:block" aria-hidden="true">
                     </div>
 
                     <IntegrationIcons imgSrc={Icon01} w="w-1/2" translate="translate-x-full" />

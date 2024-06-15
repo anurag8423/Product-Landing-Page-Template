@@ -39,6 +39,7 @@
     color: white;
     letter-spacing: -0.01em;
     transition: all 0.1s ease-in-out;
+    scroll-behavior: smooth;
 }
 
 :root {

@@ -5,7 +5,7 @@ import FeaturesImage from "../assets/images/features-image.png";
 const Features2InnerText = ({ heading, desc }) => {
     return (
         <div>
-            <h3 className="min-w-[50%] w-full text-4xl leading-[1.277] tracking-[-0.017em] font-bold mb-2 font-hk text-gray-300">{heading}</h3>
+            <h3 className="min-w-[50%] w-full text-4xl leading-[1.277] tracking-[-0.017em] font-bold mb-2 font-hk text-gray-800 dark:text-gray-300">{heading}</h3>
             <div className="w-full text-lg leading-normal tracking-[-0.017em] text-gray-500">{desc}</div>
         </div>
     );
@@ -14,7 +14,7 @@ const Features2InnerText = ({ heading, desc }) => {
 const Features2Btn = ({ btnname, order, category, setCategory }) => {
     return (
         <button
-            className={`inline-flex items-center justify-center rounded-full border font-medium leading-snug transition duration-300 ease-in-out m-1.5 px-3 py-1 shadow ${category === order ? 'text-white bg-indigo-500' : 'text-gray-300 bg-slate-800 hover:bg-slate-600 border-slate-600'}`}
+            className={`inline-flex items-center justify-center rounded-full border font-medium leading-snug transition duration-300 ease-in-out m-1.5 px-3 py-1 shadow ${category === order ? 'text-white bg-indigo-500' : 'text-gray-800 dark:text-gray-300 bg-white dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-600 border-slate-600'}`}
             onClick={() => setCategory(order)}>{btnname}
         </button>
     );
@@ -24,7 +24,7 @@ const Features2 = () => {
     const [category, setCategory] = useState('1');
 
     return (
-        <section className="max-w-full bg-gradient-1 border-t border-slate-800">
+        <section className="max-w-full bg-gradient-2 dark:bg-gradient-1 border-t border-indigo-300 dark:border-slate-800">
             <div className="relative max-w-6xl px-6 mx-auto">
                 {/* Bg gradient: top */}
                 <div className="pointer-events-none absolute top-0 left-0 right-0 -z-10 h-[25rem] opacity-25" aria-hidden="true"></div>
@@ -34,13 +34,13 @@ const Features2 = () => {
                     <img src={FeaturesIllustration02} className="max-w-none" width="1440" height="453" alt="Features 02 Illustration" />
                 </div>
 
-                <div className="m-auto w-full py-20 border-t border-slate-800">
+                <div className="m-auto w-full py-20">
                     <div className="mx-auto max-w-screen-md pb-12 text-center">
-                        <h2 className="text-5xl leading-[1.2] tracking-[-0.017em] font-bold md:text-6xl md:leading-none md:tracking-[-0.017em] font-hk text-gray-300">Features to help you create your best designs</h2>
+                        <h2 className="text-5xl leading-[1.2] tracking-[-0.017em] font-bold md:text-6xl md:leading-none md:tracking-[-0.017em] font-hk text-gray-800 dark:text-gray-300">Features to help you create your best designs</h2>
                     </div>
 
                     {/* Box */}
-                    <div className="overflow-hidden rounded bg-slate-800 bg-opacity-60 backdrop-blur-sm flex flex-col md:flex-row items-start justify-between max-w-screen-[1104px] w-full mx-auto">
+                    <div className="overflow-hidden rounded bg-white bg-opacity-50 dark:bg-slate-800 bg-opacity-60 backdrop-blur-sm flex flex-col md:flex-row items-start justify-between max-w-screen-[1104px] w-full mx-auto">
                         <div className="min-w-[50%] min-h-full p-6 lg:p-10">
                             {/* Filters */}
                             <div className="mb-6">

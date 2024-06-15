@@ -9,10 +9,10 @@ import CtaIllustration from "../assets/images/cta-illustration.svg";
 
 const Cta = () => {
     return (
-        <section className="relative bg-gradient-1 border-t border-slate-800">
+        <section className="relative bg-gradient-2 dark:bg-gradient-1 border-t border-indigo-300 dark:border-slate-800">
 
             {/* <!-- Bg gradient: top --> */}
-            <div className="pointer-events-none absolute top-0 left-0 right-0 -z-10 h-[25rem] gradient-1 c6xlp transparent opacity-25" aria-hidden="true"></div>
+            <div className="pointer-events-none absolute top-0 left-0 right-0 -z-10 h-[25rem] bg-gradient-2 dark:gradient-1 c6xlp transparent opacity-25" aria-hidden="true"></div>
 
             {/* <!-- Illustration --> */}
             <div className="pointer-events-none absolute -left-[6%] top-0  mt-[-2rem] block" aria-hidden="true">
@@ -24,7 +24,7 @@ const Cta = () => {
 
                     {/* <!-- Section header --> */}
                     <div className="mx-auto max-w-screen-md pb-12 text-center" data-aos="fade-up">
-                        <h2 className="text-5xl leading-[1.2] tracking-[-0.017em] font-bold md:text-6xl md:leading-none md:tracking-[-0.017em] font-hk text-gray-300">Join the most flexible user-centric platform for teams</h2>
+                        <h2 className="text-5xl leading-[1.2] tracking-[-0.017em] font-bold md:text-6xl md:leading-none md:tracking-[-0.017em] font-hk text-gray-800 dark:text-gray-300">Join the most flexible user-centric platform for teams</h2>
                     </div>
 
 
@@ -32,7 +32,7 @@ const Cta = () => {
 
                     {/* <!-- CTA form --> */}
                     <section className="relative mb-8 flex items-center justify-center gap-10">
-                        <form className="relative rounded-lg bg-slate-700 bg-opacity-80 p-3 flex flex-col gap-3 w-[342px] border border-slate-700 shadow-lg shadow-gray-900">
+                        <form className="relative rounded-lg bg-indigo-200 dark:bg-slate-700 bg-opacity-80 p-3 flex flex-col gap-3 w-[342px] border dark:border-slate-700 dark:shadow-lg shadow-gray-900">
 
                             <div>
                                 <label className="absolute w-px h-px overflow-hidden whitespace-nowrap -m-px p-0 border-0" for="email">Email</label>
@@ -45,7 +45,7 @@ const Cta = () => {
                                             </path>
                                         </svg>
                                     </div>
-                                    <input id="name" className="appearance-none bg-slate-800 hover:bg-slate-900 hover:bg-opacity-60 focus:bg-slate-900 focus:bg-opacity-80 placeholder-gray-500 text-sm leading-6 px-3 py-2 rounded-none w-full pl-10 pr-4" type="text"
+                                    <input id="name" className="appearance-none bg-gray-50 bg-opacity-80 dark:bg-slate-800 hover:bg-gray-50 hover:opacity-100 dark:hover:bg-slate-900 dark:hover:bg-opacity-60 focus:bg-white dark:focus:bg-slate-900 dark:focus:bg-opacity-80 placeholder-gray-400 dark:placeholder-gray-500 text-black dark:text-white text-sm leading-6 px-3 py-2 rounded-none w-full pl-10 pr-4" type="text"
                                         placeholder="Your email..." required="" />
                                 </div>
                             </div>
@@ -53,7 +53,7 @@ const Cta = () => {
 
                             <div>
                                 <button
-                                    className="relative isolate inline-flex items-center justify-center text-sm leading-[1.5715] font-medium tracking-normal rounded-lg h-10 w-full bg-white text-gray-900 border-t-2 border-gray-300 -lg shadow-gray-80shadow0">Join The Waitlist</button>
+                                    className="relative isolate inline-flex items-center justify-center text-sm leading-[1.5715] font-medium tracking-normal rounded-lg h-10 w-full bg-slate-800 dark:bg-white text-gray-300 dark:text-gray-900 border-t-2 border-slate-600 dark:border-gray-300 shadow shadow-gray-500 dark:shadow-lg dark:shadow-gray-800">Join The Waitlist</button>
                             </div>
                         </form>
                     </section>
@@ -79,7 +79,7 @@ const Cta = () => {
                                 <img className="rounded-full" src={Avatar5} width="32" height="32" alt="Avatar 05" />
                             </li>
                         </ul>
-                        <p className="text-sm leading-[1.5715] tracking-tight text-gray-500">Join the <span className="font-medium text-white">2,000+</span> members who have already signed up.</p>
+                        <p className="text-sm leading-[1.5715] tracking-tight text-gray-500">Join the <span className="font-medium text-black dark:text-white">2,000+</span> members who have already signed up.</p>
 
                     </div>
 

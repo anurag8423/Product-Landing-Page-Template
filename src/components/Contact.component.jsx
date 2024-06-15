@@ -3,9 +3,9 @@ import CtaIllustration from "../assets/images/cta-illustration.svg";
 
 const ContactCard = ({ heading, message, content, svgPath }) => {
     return (
-        <div className="flex flex-col mx-auto max-w-[342px] sm:max-w-full rounded-lg bg-slate-700 bg-opacity-60 backdrop-blur-sm p-5">
+        <div className="flex flex-col mx-auto max-w-[342px] sm:max-w-full rounded-lg bg-white dark:bg-slate-700 bg-opacity-60 backdrop-blur-sm p-5">
             <div className="mb-3 grow">
-                <div className="mb-1 font-sans font-semibold text-white">{heading}</div>
+                <div className="mb-1 font-sans font-semibold text-black dark:text-white">{heading}</div>
                 <p className="text-sm leading-[1.5715] text-gray-500">{message}</p>
             </div>
             <div className="flex items-center gap-2">
@@ -13,7 +13,7 @@ const ContactCard = ({ heading, message, content, svgPath }) => {
                     xmlns="http://www.w3.org/2000/svg">
                     <path d={svgPath}></path>
                 </svg>
-                <div className="text-sm leading-[1.5715] text-white">{content}</div>
+                <div className="text-sm leading-[1.5715] text-black dark:text-white">{content}</div>
             </div>
         </div>
     )
@@ -21,10 +21,10 @@ const ContactCard = ({ heading, message, content, svgPath }) => {
 
 const Contact = () => {
     return (
-        <main className='bg-gradient-1 border-t border-slate-800'>
+        <main className='bg-gradient-2 dark:bg-gradient-1 border-t border-indigo-300 dark:border-slate-800' id="contact-us">
             <div className="relative grow max-w-6xl mx-auto px-6 pb-20">
-                <section className="mx-auto max-w-screen-md pb-12 pt-20 text-center">
-                    <h1 className="text-5xl leading-[1.2] tracking-[-0.017em] font-bold md:text-6xl md:leading-none md:tracking-[-0.017em] mb-4 font-hk text-gray-300">Get in touch</h1>
+                <section className="mx-auto max-w-screen-md pb-16 pt-20 text-center">
+                    <h1 className="text-5xl leading-[1.2] tracking-[-0.017em] font-bold md:text-6xl md:leading-none md:tracking-[-0.017em] mb-4 font-hk text-gray-800 dark:text-gray-300">Get in touch</h1>
                     <p className="text-xl leading-normal tracking-[-0.017em] text-gray-500">
                         Fill out the form below to set up a call, or keep reading to get in touch with us
                         for customer support, partnerships, or media enquiries.
@@ -40,7 +40,7 @@ const Contact = () => {
 
                 {/* <!-- Contact form --> */}
                 <section className="relative mb-16 flex items-center justify-center gap-10">
-                    <form className="relative rounded-lg bg-slate-700 bg-opacity-80 p-3 flex flex-col gap-3 w-[342px] border border-slate-700 shadow-lg shadow-gray-900">
+                    <form className="relative rounded-lg bg-indigo-200 dark:bg-slate-700 bg-opacity-80 p-3 flex flex-col gap-3 w-[342px] border dark:border-slate-700 dark:shadow-lg shadow-gray-900">
 
                         <div>
                             <label className="absolute w-px h-px overflow-hidden whitespace-nowrap -m-px p-0" for="name">Name</label>
@@ -53,7 +53,7 @@ const Contact = () => {
                                         </path>
                                     </svg>
                                 </div>
-                                <input id="name" className="appearance-none bg-slate-800 hover:bg-slate-900 hover:bg-opacity-60 focus:bg-slate-900 focus:bg-opacity-80 placeholder-gray-500 text-sm leading-6 px-3 py-2 rounded-none w-full pl-10 pr-4" type="text"
+                                <input id="name" className="appearance-none bg-gray-50 bg-opacity-80 dark:bg-slate-800 hover:bg-gray-50 hover:opacity-100 dark:hover:bg-slate-900 dark:hover:bg-opacity-60 focus:bg-white dark:focus:bg-slate-900 dark:focus:bg-opacity-80 placeholder-gray-400 dark:placeholder-gray-500 text-black dark:text-white text-sm leading-6 px-3 py-2 rounded-none w-full pl-10 pr-4" type="text"
                                     placeholder="Your name..." required="" />
                             </div>
                         </div>
@@ -70,7 +70,7 @@ const Contact = () => {
                                         </path>
                                     </svg>
                                 </div>
-                                <input id="name" className="appearance-none bg-slate-800 hover:bg-slate-900 hover:bg-opacity-60 focus:bg-slate-900 focus:bg-opacity-80 placeholder-gray-500 text-sm leading-6 px-3 py-2 rounded-none w-full pl-10 pr-4" type="text"
+                                <input id="name" className="appearance-none bg-gray-50 bg-opacity-80 dark:bg-slate-800 hover:bg-gray-50 hover:opacity-100 dark:hover:bg-slate-900 dark:hover:bg-opacity-60 focus:bg-white dark:focus:bg-slate-900 dark:focus:bg-opacity-80 placeholder-gray-400 dark:placeholder-gray-500 text-black dark:text-white text-sm leading-6 px-3 py-2 rounded-none w-full pl-10 pr-4" type="text"
                                     placeholder="Your email..." required="" />
                             </div>
                         </div>
@@ -97,11 +97,11 @@ const Contact = () => {
                                         ></path>
                                     </svg>
                                 </div>
-                                <select id="company" className="cursor-pointer appearance-none bg-slate-800 hover:bg-slate-900 hover:bg-opacity-60 focus:bg-slate-900 focus:bg-opacity-80 placeholder-gray-500 leading-6 px-3 py-2 rounded-none w-full pl-10 text-sm" required="">
-                                    <option selected="" disabled="" hidden="">Company size</option>
-                                    <option>1 to 5 members</option>
-                                    <option>5 to 20 members</option>
-                                    <option>More than 20 members</option>
+                                <select id="company" className="cursor-pointer appearance-none bg-gray-50 bg-opacity-80 dark:bg-slate-800 hover:bg-gray-50 hover:opacity-100 dark:hover:bg-slate-900 dark:hover:bg-opacity-60 focus:bg-white dark:focus:bg-slate-900 focus:text-black dark:focus:text-white dark:focus:bg-opacity-80 placeholder-gray-400 dark:placeholder-gray-500 text-black dark:text-white leading-6 px-3 py-2 rounded-none w-full pl-10 text-sm" required="">
+                                    <option selected="" disabled="" hidden=""  className="text-black dark:text-white">Company size</option>
+                                    <option className="text-black dark:text-white">1 to 5 members</option>
+                                    <option className="text-black dark:text-white">5 to 20 members</option>
+                                    <option className="text-black dark:text-white">More than 20 members</option>
                                 </select>
                             </div>
                         </div>
@@ -109,14 +109,14 @@ const Contact = () => {
 
                         <div>
                             <label className="absolute w-px h-px overflow-hidden whitespace-nowrap -m-px p-0 border-0" for="message">Message</label>
-                            <textarea id="message" className="appearance-none bg-slate-800 hover:bg-slate-900 hover:bg-opacity-60 focus:bg-slate-900 focus:bg-opacity-80 placeholder-gray-500 border-0 leading-[1.5715] px-4 py-2 w-full resize-none text-sm rounded-lg overflow-hidden"
+                            <textarea id="message" className="appearance-none bg-gray-50 bg-opacity-80 dark:bg-slate-800 hover:bg-gray-50 hover:opacity-100 dark:hover:bg-slate-900 dark:hover:bg-opacity-60 focus:bg-white dark:focus:bg-slate-900 dark:focus:bg-opacity-80 placeholder-gray-400 dark:placeholder-gray-500 text-black dark:text-white border-0 leading-[1.5715] px-4 py-2 w-full resize-none text-sm rounded-lg overflow-hidden"
                                 placeholder="Your message.." rows="3" required=""></textarea>
                         </div>
 
 
                         <div>
                             <label className="flex items-center pb-2">
-                                <input type="checkbox" className="cursor-pointer appearance-none inline-block align-middle bg-origin-border select-none shrink-0 h-4 w-4 bg-slate-800 checked:bg-checkbox-checked text-blue-600 rounded-md p-0 overflow-hidden" />
+                                <input type="checkbox" className="cursor-pointer appearance-none inline-block align-middle bg-origin-border select-none shrink-0 h-4 w-4 bg-gray-50 bg-opacity-80 dark:bg-slate-800 checked:bg-checkbox-checked text-blue-600 rounded-md p-0 overflow-hidden" />
                                 <span className="ml-2 text-sm leading-[1.5715] text-gray-500 tracking-tight">I'd like to receive updates &amp; product news.</span>
                             </label>
                         </div>
@@ -124,7 +124,7 @@ const Contact = () => {
 
                         <div>
                             <button
-                                className="relative isolate inline-flex items-center justify-center text-sm leading-[1.5715] font-medium tracking-normal rounded-lg h-10 w-full bg-white text-gray-900 border-t-2 border-gray-300 shadow-lg shadow-gray-800">Submit</button>
+                                className="relative isolate inline-flex items-center justify-center text-sm leading-[1.5715] font-medium tracking-normal rounded-lg h-10 w-full bg-slate-800 dark:bg-white text-gray-300 dark:text-gray-900 border-t-2 border-slate-600 dark:border-gray-300 shadow shadow-gray-500 dark:shadow-lg dark:shadow-gray-800">Submit</button>
                         </div>
                     </form>
                 </section>
