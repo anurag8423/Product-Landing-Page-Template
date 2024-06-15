@@ -10,7 +10,7 @@ import Icon06 from '../assets/images/integration-icon-06.svg';
 
 const IntegrationIcons = ({ imgSrc, w = "w-full", translate = "" }) => {
     return (
-        <div className="relative flex aspect-[1/1] items-center justify-center bg-white bg-opacity-50 dark:bg-slate-800 p-2" data-aos="fade-up"
+        <div className="relative flex aspect-[1/1] items-center justify-center bg-white bg-opacity-50 dark:bg-slate-800 p-2  shadow-sm" data-aos="fade-up"
             data-aos-delay="200">
             {/* <!-- Inner lines --> */}
             <div className="absolute inset-0 left-[-6%] top-[-2.5rem] h-6 w-[calc(100%_+_24px)] hidden md:block" aria-hidden="true">

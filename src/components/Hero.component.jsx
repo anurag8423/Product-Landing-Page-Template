@@ -30,7 +30,7 @@ const Hero = () => {
                                     <span className="ml-1 tracking-[0] text-cyan-300 transition-all ease-in-out duration-300 group-hover:translate-x-1">-&gt;</span>
                                 </a>
 
-                                <a className="w-80 sm:w-full inline-flex items-center justify-center rounded border border-slate-600 font-medium leading-snug ease-in-out duration-300 bg-slate-800 text-gray-300 hover:bg-slate-600 px-6 py-3 whitespace-nowrap" href="#0">Read Docs</a>
+                                <a className="w-80 sm:w-full inline-flex items-center justify-center rounded border border-slate-600 font-medium leading-snug ease-in-out duration-300 bg-slate-800 text-gray-300 hover:bg-slate-700 px-6 py-3 whitespace-nowrap" href="#0">Read Docs</a>
                             </div>
                         </div>
 

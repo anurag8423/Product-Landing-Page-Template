@@ -124,7 +124,7 @@ const Contact = () => {
 
                         <div>
                             <button
-                                className="relative isolate inline-flex items-center justify-center text-sm leading-[1.5715] font-medium tracking-normal rounded-lg h-10 w-full bg-slate-800 dark:bg-white text-gray-300 dark:text-gray-900 border-t-2 border-slate-600 dark:border-gray-300 shadow shadow-gray-500 dark:shadow-lg dark:shadow-gray-800">Submit</button>
+                                className="relative isolate inline-flex items-center justify-center text-sm leading-[1.5715] font-medium tracking-normal rounded-lg h-10 w-full bg-slate-800 dark:bg-white text-gray-300 dark:text-gray-900 border-t-2 border-slate-600 dark:border-gray-300 shadow shadow-gray-500 dark:shadow-lg dark:shadow-gray-800 hover:bg-slate-700">Submit</button>
                         </div>
                     </form>
                 </section>

@@ -40,7 +40,7 @@ const Features2 = () => {
                     </div>
 
                     {/* Box */}
-                    <div className="overflow-hidden rounded bg-white bg-opacity-50 dark:bg-slate-800 bg-opacity-60 backdrop-blur-sm flex flex-col md:flex-row items-start justify-between max-w-screen-[1104px] w-full mx-auto">
+                    <div className="overflow-hidden rounded bg-white bg-opacity-50 dark:bg-slate-800 dark:bg-opacity-60 backdrop-blur-sm flex flex-col md:flex-row items-start justify-between max-w-screen-[1104px] w-full mx-auto shadow-sm">
                         <div className="min-w-[50%] min-h-full p-6 lg:p-10">
                             {/* Filters */}
                             <div className="mb-6">

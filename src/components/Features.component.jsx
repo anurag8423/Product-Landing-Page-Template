@@ -64,7 +64,7 @@ const Features = () => {
                 {/* <!-- Arrows --> */}
                 <div className="mt-12 flex justify-end">
                     <button
-                        className="carousel-prev relative z-20 flex h-14 w-14 items-center justify-center rounded-full border border-slate-700 bg-slate-800 transition-all ease-in-out duration-300 hover:bg-slate-800"
+                        className="carousel-prev relative z-20 flex h-14 w-14 items-center justify-center rounded-full border border-indigo-200 dark:border-slate-700 bg-white bg-opacity-60 dark:bg-slate-800 transition-all ease-in-out duration-300 hover:bg-white dark:hover:bg-slate-700 shadow-sm"
                         onClick={scrollPrev}>
                         <span className="absolute w-px h-px overflow-hidden whitespace-nowrap -m-px p-0 border-0">Previous</span>
                         <svg className="h-4 w-4 fill-slate-400 transition-all ease-in-out duration-300" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +73,7 @@ const Features = () => {
                     </button>
 
                     <button
-                        className="carousel-next relative z-20 flex h-14 w-14 ml-4 items-center justify-center rounded-full border border-slate-700 bg-slate-800 transition-all ease-in-out duration-300 hover:bg-slate-800"
+                        className="carousel-next relative z-20 flex h-14 w-14 ml-4 items-center justify-center rounded-full border border-indigo-200 dark:border-slate-700 bg-white bg-opacity-60 dark:bg-slate-800 transition-all ease-in-out duration-300 hover:bg-white dark:hover:bg-slate-700 shadow-sm"
                         onClick={scrollNext}>
                         <span className="absolute w-px h-px overflow-hidden whitespace-nowrap -m-px p-0 border-0">Next</span>
                         <svg className="h-4 w-4 fill-slate-400 transition-all ease-in-out duration-300" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
