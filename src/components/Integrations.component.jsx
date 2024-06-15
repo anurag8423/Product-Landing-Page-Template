@@ -18,7 +18,7 @@ const IntegrationIcons = ({ imgSrc, w = "w-full", translate = "" }) => {
                 <div className={`absolute h-0.5 ${w} bg-indigo-300 dark:bg-slate-800 ${translate}`}></div>
             </div>
             {/* <!-- Circle --> */}
-            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-3 dark:bg-gradient-1">
+            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-2 dark:bg-gradient-1">
                 {/* <!-- Icon --> */}
                 <img src={imgSrc} width="53" height="45" alt="Icon 03" />
             </div>

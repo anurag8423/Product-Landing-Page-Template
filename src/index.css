@@ -40,6 +40,7 @@
     letter-spacing: -0.01em;
     transition: all 0.1s ease-in-out;
     scroll-behavior: smooth;
+    user-select: text;
 }
 
 :root {
@@ -50,4 +51,9 @@
 
 :root:--webkit-scrollbar {
     display: hidden;
+}
+
+::selection {
+    background-color: #f9f9f9;
+    color: #000;
 }

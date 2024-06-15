@@ -26,13 +26,13 @@ const Navbar = () => {
                     <nav className="flex justify-center">
                         <ul className="flex items-center font-medium gap-x-3 text-sm leading-[1.5715]" >
                             <li>
-                                <a className="whitespace-nowrap transition-colors ease-in-out duration text-black dark:text-white rounded-lg py-1.5 px-3 hover:bg-gradient-4 dark:hover:bg-slate-700 dark:hover:bg-opacity-70" href="#updates">Updates</a>
+                                <a className="whitespace-nowrap transition-colors ease-in-out duration text-black dark:text-white rounded-lg py-1.5 px-3 hover:bg-gradient-3 dark:hover:bg-slate-900 dark:hover:bg-opacity-20" href="#updates">Updates</a>
                             </li>
                             <li>
-                                <a className="whitespace-nowrap transition-colors ease-in-out duration text-black dark:text-white rounded-lg py-1.5 px-3 hover:bg-gradient-4 dark:hover:bg-slate-700 dark:hover:bg-opacity-70" href="#faq">FAQ</a>
+                                <a className="whitespace-nowrap transition-colors ease-in-out duration text-black dark:text-white rounded-lg py-1.5 px-3 hover:bg-gradient-3 dark:hover:bg-slate-900 dark:hover:bg-opacity-20" href="#faq">FAQ</a>
                             </li>
                             <li>
-                                <a className="whitespace-nowrap transition-colors ease-in-out duration text-black dark:text-white rounded-lg py-1.5 px-3 hover:bg-gradient-4 dark:hover:bg-slate-700 dark:hover:bg-opacity-70" href="#contact-us">Contact us</a>
+                                <a className="whitespace-nowrap transition-colors ease-in-out duration text-black dark:text-white rounded-lg py-1.5 px-3 hover:bg-gradient-3 dark:hover:bg-slate-900 dark:hover:bg-opacity-20" href="#contact-us">Contact us</a>
                             </li>
                         </ul>
                     </nav>

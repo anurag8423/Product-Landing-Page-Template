@@ -20,10 +20,9 @@ module.exports = {
       },
       backgroundImage: {
         'checkbox-checked': "url('../src/assets/images/checkbox-checked.svg')",
-        "gradient-1": "linear-gradient(to bottom, rgb(18,27,46), transparent)",
-        "gradient-2": "linear-gradient(to bottom, rgb(224,231,255), transparent)",
-        "gradient-3": "linear-gradient(to bottom, rgb(199,210,254), transparent)",
-        "gradient-4": "linear-gradient(to bottom, rgb(199,210,254,.6), rgb(224,231,255,.6))",
+        "gradient-1": "linear-gradient(to bottom, rgb(18,27,46), transparent)", //dark gradient 
+        "gradient-2": "linear-gradient(to bottom, rgb(199,210,254,.3), transparent)", //section gradient
+        "gradient-3": "linear-gradient(to bottom, rgb(199,210,254,.6), rgb(224,231,255,.6))", //navbar item hover
       },
       keyframes: {
         ping: {

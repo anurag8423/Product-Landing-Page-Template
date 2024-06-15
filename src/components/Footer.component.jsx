@@ -46,7 +46,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="mx-auto max-w-6xl w-full px-6">
+        <footer className="relative mx-auto max-w-6xl w-full px-6 pb-4">
             {/* Blocks */}
             <div className="grid gap-8 border-t border-indigo-300 dark:border-gray-800 grid-cols-1 sm:grid-cols-2 md:grid-cols-5 py-12">
 
@@ -92,7 +92,7 @@ const Footer = () => {
                     <a className="text-gray-500 transition ease-in-out duration-150 hover:text-gray-800 dark:text-gray-300" href="#0">Terms</a> · <a className="text-gray-500 transition ease-in-out duration-150 hover:text-gray-800 dark:text-gray-300" href="#0">Privacy Policy</a>
                 </div>
 
-                <p className="text-sm whitespace-nowrap text-slate-200 dark:text-slate-800 dark:text-opacity-15">Made by <a href="https://mondalsurojit.github.io/Surojit/">Surojit Mondal</a></p>
+                <p className="absolute left-1/2 -translate-x-1/2 bottom-2 text-sm whitespace-nowrap text-slate-200 dark:text-slate-800 dark:text-opacity-15">Made by <a href="https://mondalsurojit.github.io/Surojit/">Surojit Mondal</a></p>
 
                 {/* Social links */}
                 <ul className="flex space-x-2">
