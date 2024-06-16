@@ -41,7 +41,7 @@ const Features = () => {
     return (
         <section className="relative">
             {/* <!-- Bg illustration --> */}
-            <div className="pointer-events-none absolute left-0 -z-0 mt-[-5rem]" aria-hidden="true">
+            <div className="pointer-events-none absolute left-1/2 -translate-x-1/2 -z-0 mt-[-5rem]" aria-hidden="true">
                 <img src={FeatureIllustration} className="max-w-none" width="1440" height="440" alt="Illustration" />
             </div>
 
