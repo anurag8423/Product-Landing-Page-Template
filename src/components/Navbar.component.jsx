@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <div className="absolute sm:absolute top-3 left-1/2 transform -translate-x-1/2 max-w-screen-md w-full px-2 z-30">
             <div className="mx-auto max-w-screen-md w-full md:w-[780px] p-1.5 bg-violet-400 bg-opacity-30 dark:bg-slate-800 dark:bg-opacity-40 rounded-sm border-x border-gray-200 dark:border-slate-800">
-                <div className="h-12 flex justify-between items-center rounded-lg gap-x-2 bg-white bg-opacity-80 dark:bg-slate-600 dark:bg-opacity-60 backdrop-blur px-3 shadow border border-indigo-300 dark:border-slate-600 border-opacity-60">
+                <div className="h-12 flex justify-between items-center rounded-lg gap-x-2 bg-white bg-opacity-80 dark:bg-slate-600 dark:bg-opacity-60 backdrop-blur px-4 sm:px-3 shadow border border-indigo-300 dark:border-slate-600 border-opacity-60">
                     {/* Site logo */}
                     <div className="flex-1">
                         <a href="index.html">
