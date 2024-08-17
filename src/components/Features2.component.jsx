@@ -24,7 +24,7 @@ const Features2 = () => {
     const [category, setCategory] = useState('1');
 
     return (
-        <section className="max-w-full bg-gradient-2 dark:bg-gradient-1 border-t border-indigo-300 dark:border-slate-800">
+        <section className="max-w-full">
             <div className="relative max-w-6xl px-6 mx-auto py-12 md:py-20">
                 {/* Bg gradient: top */}
                 <div className="pointer-events-none absolute top-0 left-0 right-0 -z-10 h-[25rem] opacity-25" aria-hidden="true"></div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import CtaIllustration from "../assets/images/cta-illustration.svg";
+// import HeroIllustration from '../assets/images/hero-illustration.svg';
 
 const ContactCard = ({ heading, message, content, svgPath }) => {
     return (
@@ -21,9 +22,9 @@ const ContactCard = ({ heading, message, content, svgPath }) => {
 
 const Contact = () => {
     return (
-        <main className='' id="contact-us">
-            <div className="relative grow max-w-6xl mx-auto px-6 py-12 md:py-20 ">
-                <section className="mx-auto max-w-screen-md pb-16 text-center">
+        <main className='bg-hero-bg' id="contact">
+            <div className="relative grow max-w-6xl mx-auto px-6 py-12 md:py-20">
+                <section className="mx-auto pt-16 max-w-screen-md pb-16 text-center">
                     <h1 className="text-5xl leading-[1.2] tracking-[-0.017em] font-bold md:text-6xl md:leading-none md:tracking-[-0.017em] mb-4 font-hk text-gray-800 dark:text-gray-300">Get in touch</h1>
                     <p className="text-xl leading-normal tracking-[-0.017em] text-gray-500">
                         Fill out the form below to set up a call, or keep reading to get in touch with us
@@ -98,7 +99,7 @@ const Contact = () => {
                                     </svg>
                                 </div>
                                 <select id="company" className="cursor-pointer appearance-none bg-gray-50 bg-opacity-80 dark:bg-slate-800 hover:bg-gray-50 hover:opacity-100 dark:hover:bg-slate-900 dark:hover:bg-opacity-60 focus:bg-white dark:focus:bg-slate-900 focus:text-black dark:focus:text-white dark:focus:bg-opacity-80 placeholder-gray-400 dark:placeholder-gray-500 text-black dark:text-white leading-6 px-3 py-2 rounded-none w-full pl-10 text-sm" required="">
-                                    <option selected="" disabled="" hidden=""  className="text-black dark:text-white">Company size</option>
+                                    <option selected="" disabled="" hidden="" className="text-black dark:text-white">Company size</option>
                                     <option className="text-black dark:text-white">1 to 5 members</option>
                                     <option className="text-black dark:text-white">5 to 20 members</option>
                                     <option className="text-black dark:text-white">More than 20 members</option>

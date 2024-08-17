@@ -1,10 +1,11 @@
 import React from 'react';
+import wormhole from '../assets/images/wormhole.png';
 
 const FooterBlock = ({ title, links }) => {
     return (
         <div>
             <h6 className="mb-3 text-xs leading-normal font-semibold uppercase text-black dark:text-gray-400 underline">{title}</h6>
-            <ul className="text-sm leading-6 ">
+            <ul className="text-sm leading-6">
                 {links.map((link, index) => (
                     <li className="mt-1.5" key={index}>
                         <a className="text-gray-500 transition ease-in-out duration-150 hover:text-gray-800 dark:hover:text-white" href={link.href}>
@@ -46,12 +47,13 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="relative mx-auto max-w-6xl w-full px-6 pb-4">
+        <footer className="relative mx-auto max-w-6xl w-full px-6 pt-20 md:pt-28 lg:pt-32 pb-4 h-auto">
+            <img src={wormhole} alt="" className='absolute -top-20 md:-top-44 lg:-top-64 left-1/2 -translate-x-1/2 w-full sm:w-3/5 h-auto object-cover -z-0 m-auto' />
             {/* Blocks */}
-            <div className="grid gap-8 border-t border-indigo-300 dark:border-gray-800 grid-cols-1 sm:grid-cols-2 md:grid-cols-5 py-12">
+            <div className="grid gap-8 dark:border-gray-800 grid-cols-2 sm:grid-cols-2 md:grid-cols-5 py-12">
 
                 {/* 1st block */}
-                <div className="max-w-xs col-span-1 sm:col-span-2 md:col-span-1">
+                <div className="max-w-xs col-span-2 md:col-span-1">
                     <div className="mb-2">
                         {/* Logo */}
                         <a className="inline-flex" href="index.html" aria-label="Cruip">

@@ -4,7 +4,7 @@ import HeroImg from '../assets/images/hero-image.png';
 
 const Hero = () => {
     return (
-        <section className="relative pb-12 md:pb-20">
+        <section className="relative pb-12 md:pb-20 bg-hero-bg">
 
             {/* <!-- Illustration --> */}
             <div className="pointer-events-none absolute left-1/2 -translate-x-1/2 block z-auto" aria-hidden="true">
@@ -22,7 +22,7 @@ const Hero = () => {
                         <p className="mb-10 text-xl leading-normal tracking-[-0.017em] text-gray-500" data-aos="fade-up" data-aos-delay="100">Our landing page
                             template works on all devices, so you only have to set it up once, and get beautiful
                             results forever.</p>
-                        <div className="mx-auto max-w-xs ckr19 inline-flex justify-center c53ft c5sau gap-4" data-aos="fade-up"
+                        <div className="mx-auto max-w-xs ckr19 inline-flex justify-center gap-4" data-aos="fade-up"
                             data-aos-delay="200">
                             <div className="flex flex-col gap-4 sm:flex-row">
                                 <a className="w-80 sm:w-full inline-flex items-center justify-center rounded font-medium leading-snug ease-in-out duration-300 border-transparent bg-indigo-500 text-white hover:bg-indigo-600 px-6 py-3 whitespace-nowrap group" href="signup.html">

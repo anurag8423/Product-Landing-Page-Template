@@ -32,7 +32,7 @@ const UpdateItems = ({ renderBefore, date, heading, content, dp, author }) => {
 
 const Updates = () => {
     return (
-        <main className="relative mx-auto max-w-6xl px-4 sm:px-6 pt-12 pb-16 md:py-20 border-b border-indigo-300 dark:border-slate-800" id="updates">
+        <main className="relative mx-auto max-w-6xl px-4 sm:px-6 pt-12 pb-16 md:py-20" id="updates">
 
             {/* <!-- Bg illustration --> */}
             <div className="pointer-events-none absolute left-0 top-1/2 -z-0 mt-[-5rem]" aria-hidden="true">

@@ -5,13 +5,48 @@ import Icon03 from "../assets/images/features-icon-03.svg";
 import Icon04 from "../assets/images/features-icon-04.svg";
 import FeatureIllustration from "../assets/images/features-illustration.svg";
 
+// Array to store the feature items data
+const featureItemsData = [
+    {
+        title: "Blog Post & Articles",
+        imgSrc: Icon01,
+        content: "Generate optimized blog post and articles to get organic traffic - making you visible to the world."
+    },
+    {
+        title: "Product Description",
+        imgSrc: Icon02,
+        content: "Create a perfect description for your products to engage your customers to click and buy."
+    },
+    {
+        title: "Social Media Ads",
+        imgSrc: Icon03,
+        content: "Create ads copies for your social media - make an impact with your online marketing campaigns."
+    },
+    {
+        title: "Product Benefits",
+        imgSrc: Icon04,
+        content: "Create a bullet point list of your product benefits that appeal to your customers to purchase."
+    },
+    {
+        title: "Advance Analytics",
+        imgSrc: Icon04,
+        content: "Write very attractive headlines, slogans or paragraph for your landing page of your website."
+    },
+    {
+        title: "Suggest Improvements",
+        imgSrc: Icon04,
+        content: "Need to improve your existing content? Our AI will rewrite and improve the content for you it becomes better."
+    }
+];
+
+// FeatureItems component
 const FeatureItems = ({ title, imgSrc, content }) => {
     return (
         <div className="flex h-auto flex-col rounded bg-white bg-opacity-50 dark:bg-slate-800 p-6 min-w-full sm:min-w-[48%] md:min-w-[32%] snap-start">
             <img className="mb-3" src={imgSrc} width="56" height="56" alt="Icon" />
             <div className="grow">
                 <div className="text-xl leading-normal tracking-[-0.017em] font-bold font-hk text-black dark:text-white">{title}</div>
-                <div className="mb-3 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</div>
+                <div className="mb-3 text-gray-500">{content}</div>
             </div>
             <div className="text-right">
                 <a className="inline-flex items-center font-medium text-indigo-500 transition-all ease-in-out duration-300 group" href="#0">Learn More<span className="text-indigo-500 ml-1 tracking-[0] transition-all ease-in-out duration-300 group-hover:translate-x-1">-&gt;</span></a>
@@ -20,6 +55,7 @@ const FeatureItems = ({ title, imgSrc, content }) => {
     );
 };
 
+// Features component
 const Features = () => {
     const scrollableDiv = useRef(null);
 
@@ -36,7 +72,6 @@ const Features = () => {
             behavior: 'smooth'
         });
     }
-
 
     return (
         <section className="relative">
@@ -55,10 +90,14 @@ const Features = () => {
                 </div>
 
                 <div ref={scrollableDiv} className="w-full h-auto flex gap-6 overflow-auto snap-x snap-mandatory no-scrollbar">
-                    <FeatureItems title={"Collaboration"} imgSrc={Icon01} content={""} />
-                    <FeatureItems title={"Experiences"} imgSrc={Icon02} content={""} />
-                    <FeatureItems title={"Animation"} imgSrc={Icon03} content={""} />
-                    <FeatureItems title={"Modeling"} imgSrc={Icon04} content={""} />
+                    {featureItemsData.map((item, index) => (
+                        <FeatureItems
+                            key={index}
+                            title={item.title}
+                            imgSrc={item.imgSrc}
+                            content={item.content}
+                        />
+                    ))}
                 </div>
 
                 {/* <!-- Arrows --> */}

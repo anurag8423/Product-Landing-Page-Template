@@ -9,7 +9,7 @@ import CtaIllustration from "../assets/images/cta-illustration.svg";
 
 const Cta = () => {
     return (
-        <section className="relative bg-gradient-2 dark:bg-gradient-1 border-t border-indigo-300 dark:border-slate-800">
+        <section className="relative">
 
             {/* <!-- Bg gradient: top --> */}
             <div className="pointer-events-none absolute top-0 left-0 right-0 -z-10 h-[25rem] bg-gradient-2 dark:gradient-1 transparent opacity-25" aria-hidden="true"></div>

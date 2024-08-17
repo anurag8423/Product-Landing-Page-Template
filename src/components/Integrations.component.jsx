@@ -34,7 +34,7 @@ const Integrations = () => {
             {/* <!-- Bottom vertical line --> */}
             <div className="absolute left-2/4 bottom-0 h-8 w-0.5 bg-indigo-300 dark:bg-slate-800 hidden md:block" aria-hidden="true"></div>
 
-            <div className="mx-auto max-w-6xl px-4 py-12 md:py-20 border-t border-indigo-300 dark:border-slate-800">
+            <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
                 {/* <!-- Section header --> */}
                 <div className="mx-auto max-w-screen-md pb-12 text-center">
                     <h2 className="text-5xl leading-[1.2] tracking-[-0.017em] font-bold md:text-6xl md:leading-none md:tracking-[-0.017em] font-hk text-gray-800 dark:text-gray-300">An ecosystem of <br /> integrations</h2>

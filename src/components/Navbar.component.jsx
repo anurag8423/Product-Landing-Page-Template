@@ -1,16 +1,29 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { ModeContext } from '../../src/Mode.context.jsx';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
     const { darkMode, toggleMode } = useContext(ModeContext);
+    const location = useLocation();
+
+    useEffect(() => {
+        // Scroll to the section based on the current URL hash
+        const hash = location.hash;
+        if (hash) {
+            const element = document.querySelector(hash);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [location]);
 
     return (
-        <div className="absolute sm:absolute top-3 left-1/2 transform -translate-x-1/2 max-w-screen-md w-full px-2 z-30">
+        <section className="fixed top-3 left-1/2 transform -translate-x-1/2 max-w-screen-md w-full px-2 z-30">
             <div className="mx-auto max-w-screen-md w-full md:w-[780px] p-1.5 bg-violet-400 bg-opacity-30 dark:bg-slate-800 dark:bg-opacity-40 rounded-sm border-x border-gray-200 dark:border-slate-800">
                 <div className="h-12 flex justify-between items-center rounded-lg gap-x-2 bg-white bg-opacity-80 dark:bg-slate-600 dark:bg-opacity-60 backdrop-blur px-4 sm:px-3 shadow border border-indigo-300 dark:border-slate-600 border-opacity-60">
                     {/* Site logo */}
                     <div className="flex-1">
-                        <a href="index.html">
+                        <Link to="/">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
                                 <path className="fill-indigo-300"
                                     d="M16.975 3.036c6.402.475 11.514 5.586 11.99 11.989H24.32a7.345 7.345 0 0 1-7.345-7.345V3.036Zm-1.95 21.284v4.644c-6.402-.475-11.514-5.587-11.989-11.99H7.68a7.345 7.345 0 0 1 7.345 7.346Z">
@@ -19,20 +32,26 @@ const Navbar = () => {
                                     d="M3.036 15.025c.475-6.403 5.587-11.514 11.99-11.99V7.68a7.345 7.345 0 0 1-7.346 7.345H3.036Zm21.284 1.95h4.644c-.475 6.402-5.586 11.514-11.989 11.989V24.32a7.345 7.345 0 0 1 7.345-7.345Z">
                                 </path>
                             </svg>
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Navigation links */}
                     <nav className="flex justify-center">
-                        <ul className="flex items-center font-medium gap-x-3 text-sm leading-[1.5715]" >
+                        <ul className="flex items-center font-medium gap-x-1 text-sm leading-[1.5715]" >
                             <li>
-                                <a className="whitespace-nowrap transition-colors ease-in-out duration text-black dark:text-white rounded-lg py-1.5 px-3 hover:bg-gradient-3 dark:bg-none dark:hover:bg-slate-900 dark:hover:bg-opacity-20" href="#updates">Updates</a>
+                                <Link to="/#updates" className="whitespace-nowrap transition-colors ease-in-out duration text-black dark:text-white rounded-lg py-1.5 px-3 hover:bg-gradient-3 dark:bg-none dark:hover:bg-slate-900 dark:hover:bg-opacity-20">
+                                    Updates
+                                </Link>
                             </li>
                             <li>
-                                <a className="whitespace-nowrap transition-colors ease-in-out duration text-black dark:text-white rounded-lg py-1.5 px-3 hover:bg-gradient-3 dark:bg-none dark:hover:bg-slate-900 dark:hover:bg-opacity-20" href="#faq">FAQ</a>
+                                <Link to="/#faq" className="whitespace-nowrap transition-colors ease-in-out duration text-black dark:text-white rounded-lg py-1.5 px-3 hover:bg-gradient-3 dark:bg-none dark:hover:bg-slate-900 dark:hover:bg-opacity-20">
+                                    FAQ
+                                </Link>
                             </li>
                             <li>
-                                <a className="whitespace-nowrap transition-colors ease-in-out duration text-black dark:text-white rounded-lg py-1.5 px-3 hover:bg-gradient-3 dark:bg-none dark:hover:bg-slate-900 dark:hover:bg-opacity-20" href="#contact-us">Contact us</a>
+                                <Link to="/contact#contact" className="whitespace-nowrap transition-colors ease-in-out duration text-black dark:text-white rounded-lg py-1.5 px-3 hover:bg-gradient-3 dark:bg-none dark:hover:bg-slate-900 dark:hover:bg-opacity-20">
+                                    Contact us
+                                </Link>
                             </li>
                         </ul>
                     </nav>
@@ -53,7 +72,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 
