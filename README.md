@@ -1,4 +1,4 @@
-# BharatAI Official Website
+# Product Landing Page Template
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules. It uses Tailwind CSS for styling.
 
@@ -8,8 +8,7 @@ Follow these steps to run the project:
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/BHARATTECH-ECOSYSTEMS/BharatAI_main
-   cd BharatAI_main
+   git clone https://github.com/anurag8423/Product-Landing-Page-Template.git
    ```
 
 2. **Install dependencies:**
